@@ -1,0 +1,14 @@
+{
+"builds": [
+{
+"src": "otp_auth_system/wsgi.py",
+"use": "@vercel/python"
+}
+],
+"routes": [
+{
+"src": "/(.*)",
+"dest": "otp_auth_system/wsgi.py"
+}
+]
+}
